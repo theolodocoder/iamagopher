@@ -19,9 +19,12 @@ func main() {
 
 	// ================
 	x := [3]int{1, 2, 3}
-	y := make([]int, 2)
+	// y :=make([]int, 2)
 	// num represents the number of el copied
-	num := copy(y, x[1:])
-	fmt.Println(y)
-	fmt.Println(num)
+	// num := copy(y, x[1:])
+	copy(x[1:], x[:])
+	fmt.Println(x)
+
+	str := "😊"
+	fmt.Println(len(str))
 }
